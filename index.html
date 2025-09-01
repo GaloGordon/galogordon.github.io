@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="title.home">Minimal Portfolio</title>
+  <meta name="description" content="Minimal black & purple portfolio">
+  <meta name="theme-color" content="#7c3aed" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+  <a class="brand" href="./"><span class="dot">●</span><span data-i18n="brand.name">Galo Gordón</span></a>
+  <nav class="nav" data-active="home">
+    <a href="./" data-page="home" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-page="about" data-i18n="nav.about">About</a>
+    <a href="cv.html" data-page="cv" data-i18n="nav.cv">CV</a>
+    <a href="tools.html" data-page="tools" data-i18n="nav.tools">Tools</a>
+    <a class="cta" href="contact.html" data-page="contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+</header>
+
+  <main class="container">
+<section class="hero">
+  <h1><span data-i18n="home.hello">Hi, I'm</span> <span class="grad" data-i18n="brand.name">Galo Gordón</span></h1>
+  <p class="lead" data-i18n="home.tagline">I build things for the web. I like clean interfaces, performance, and good coffee.</p>
+  <div class="hero-actions">
+    <a class="btn" href="about.html" data-i18n="home.learnMore">Learn more</a>
+    <a class="btn ghost" href="cv.html" data-i18n="home.viewCV">View CV</a>
+  </div>
+</section>
+<section class="grid-3">
+  <article class="card">
+    <h3 data-i18n="home.projects.title">Projects</h3>
+    <p data-i18n="home.projects.text">Add cards with your highlighted projects here. Keep it simple.</p>
+    <a class="link" href="#" data-i18n="home.projects.link">See projects</a>
+  </article>
+  <article class="card">
+    <h3 data-i18n="home.writing.title">Writing</h3>
+    <p data-i18n="home.writing.text">If you have a blog or notes, link them here. You can also hide this card.</p>
+    <a class="link" href="#" data-i18n="home.writing.link">Go to blog</a>
+  </article>
+  <article class="card">
+    <h3 data-i18n="home.tools.title">Tools</h3>
+    <p data-i18n="home.tools.text">Small utilities I create. For example, a TP/SL calculator.</p>
+    <a class="link" href="tools.html" data-i18n="home.tools.link">Open tools</a>
+  </article>
+</section>
+</main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> <span data-i18n="brand.name">Galo Gordón</span>. <span data-i18n="footer.made">Made with ♥.</span> | <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <div class="lang-toggle" aria-label="Language switcher">
+  <button id="btn-en" data-lang="en">EN</button>
+  <button id="btn-es" data-lang="es">ES</button>
+</div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  
+</body>
+</html>
