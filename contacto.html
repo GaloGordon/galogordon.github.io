@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto · Tu Nombre</title>
+  <meta name="description" content="Ponte en contacto.">
+  <meta name="theme-color" content="#7c3aed" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+  <a class="brand" href="/"><span class="dot">●</span>Tu Nombre</a>
+  <nav class="nav" data-active="contacto">
+    <a href="/" data-page="inicio">Inicio</a>
+    <a href="/sobre-mi.html" data-page="sobre-mi">Sobre mí</a>
+    <a href="/cv.html" data-page="cv">CV</a>
+    <a href="/herramientas.html" data-page="herramientas">Herramientas</a>
+    <a class="cta" href="/contacto.html" data-page="contacto">Contacto</a>
+  </nav>
+</header>
+
+  <main class="container"><h1>Contacto</h1>
+<p class="lead">¿Tienes una idea o proyecto? Escríbeme.</p>
+<form class="form" action="mailto:tu-email@ejemplo.com" method="POST" enctype="text/plain">
+  <div class="field">
+    <label>Nombre</label>
+    <input type="text" name="nombre" placeholder="Tu nombre" required />
+  </div>
+  <div class="field">
+    <label>Email</label>
+    <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+  </div>
+  <div class="field">
+    <label>Mensaje</label>
+    <textarea name="mensaje" rows="6" placeholder="Cuéntame..." required></textarea>
+  </div>
+  <button class="btn" type="submit">Enviar</button>
+  <p class="hint">Tip: Para formularios sin backend, puedes usar servicios como Formspree o Netlify Forms.</p>
+</form>
+</main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Tu Nombre. Hecho con ♥. | <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+  
+</body>
+</html>
