@@ -19,7 +19,26 @@
     <a href="./" data-page="home" data-i18n="nav.home">Home</a>
     <a href="about.html" data-page="about" data-i18n="nav.about">About</a>
     <a href="cv.html" data-page="cv" data-i18n="nav.cv">CV</a>
-    <a href="tools.html" data-page="tools" data-i18n="nav.tools">Tools</a>
+    <div class="menu tools">
+  <button class="menu-toggle" aria-haspopup="true" aria-expanded="false" data-i18n="nav.tools">
+    Tools
+    <span class="caret" aria-hidden="true">▾</span>
+  </button>
+  <ul class="menu-list" role="menu" aria-label="Tools submenu">
+    <li role="none">
+      <a role="menuitem" href="tools/tp-sl-calculator.html" data-i18n="nav.tools.tp">TP/SL Calculator</a>
+    </li>
+    <li role="none">
+      <a role="menuitem" href="tools/position-size.html" data-i18n="nav.tools.ps">Position Size</a>
+    </li>
+    <li role="none">
+      <a role="menuitem" href="tools/fee-converter.html" data-i18n="nav.tools.fee">Fee Converter</a>
+    </li>
+    <li role="none">
+      <a role="menuitem" href="tools/risk-reward.html" data-i18n="nav.tools.rr">Risk/Reward</a>
+    </li>
+  </ul>
+</div>
     <a class="cta" href="contact.html" data-page="contact" data-i18n="nav.contact">Contact</a>
   </nav>
 </header>
