@@ -1,0 +1,6 @@
+title: Minimal Portfolio
+description: Minimal black & purple portfolio
+theme: null
+markdown: kramdown
+plugins: []   # GitHub Pages compila Jekyll automáticamente
+# Si tu sitio está en un subpath (no user/organization site), define baseurl: "/mi-repo"
