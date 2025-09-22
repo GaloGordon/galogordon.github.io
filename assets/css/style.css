@@ -62,3 +62,57 @@
   background: rgba(255,255,255,.06);
   outline: none;
 }
+
+/* Nav: keep a single row and align items */
+.nav{
+  display:flex;
+  align-items:center;
+  gap:.75rem;
+  flex-wrap:nowrap;          /* don't wrap to a second line */
+  white-space:nowrap;        /* avoid breaking in the middle of items */
+}
+
+/* Make links and the dropdown wrapper behave the same inline */
+.nav a,
+.nav .menu{
+  display:inline-flex;
+  align-items:center;
+}
+
+/* Push CTA to the far right (and keep it on the same row) */
+.nav .cta{
+  margin-left:auto;          /* stays on the right */
+  flex:0 0 auto;             /* don't let it wrap */
+}
+
+/* Dropdown button styled like a link (and not full-width) */
+.menu-toggle{
+  display:inline-flex;
+  align-items:center;
+  background:transparent;
+  border:1px solid transparent;
+  padding:.4rem .7rem;
+  border-radius:.6rem;
+  cursor:pointer;
+}
+
+/* Dropdown list absolutely positioned so it doesn't affect layout */
+.menu.tools{ position:relative; }
+.menu-list{
+  position:absolute;
+  top:calc(100% + .4rem);
+  left:0;
+  min-width:220px;
+  margin:0;
+  padding:.4rem;
+  list-style:none;
+  z-index:50;
+  display:none;
+}
+.menu.open .menu-list,
+.menu:focus-within .menu-list{ display:block; }
+
+/* (optional) hover to open on desktop */
+@media (hover:hover){
+  .menu.tools:hover .menu-list{ display:block; }
+}
